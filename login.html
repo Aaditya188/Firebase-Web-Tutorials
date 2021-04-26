@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+<form>
+    <center>
+        <label>Email:</label><br>
+        <input type="email" id="u_email" required="required">
+        <br><br>
+    </center>
+    <center>
+        <label>Password:</label><br>
+        <input type="password" id="u_password" required="required">
+        <br><br>
+    </center>
+    <center>
+        <button type="button" onclick="loginUser();">Login</button>
+    </center>
+</form>
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+     <script>
+
+        var firebaseConfig = {
+                apiKey: "AIzaSyBfolJh1jLX-HV5CHALpcfBWGoqaQmPpno",
+                authDomain: "jobhut-948da.firebaseapp.com",
+                projectId: "jobhut-948da",
+                storageBucket: "jobhut-948da.appspot.com",
+                messagingSenderId: "230503556312",
+                appId: "1:230503556312:web:351d8c69932dd2ae8723ad"
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+<script src="js/loginfile.js" type="text/javascript"></script>
+</body>
+</html>

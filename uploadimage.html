@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>upload image to firebase</title>
+</head>
+<body>
+<center>
+    <form enctype="multipart/form-data">
+        <label>select image : </label>
+        <input type="file" id="image" accept="image/*"><br><br>
+        <button type="button" onclick="upload()">Upload</button>
+    </form>
+</center>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script> 
+
+<script>
+
+var firebaseConfig = {
+		apiKey: "AIzaSyBfolJh1jLX-HV5CHALpcfBWGoqaQmPpno",
+		authDomain: "jobhut-948da.firebaseapp.com",
+		projectId: "jobhut-948da",
+		storageBucket: "jobhut-948da.appspot.com",
+		messagingSenderId: "230503556312",
+		appId: "1:230503556312:web:351d8c69932dd2ae8723ad"
+	};
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script type="text/javascript" src="js/uploadimage.js"></script>
+</body>
+</html>
